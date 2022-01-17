@@ -74,6 +74,8 @@ One of the files created when you ran `truffle init` is `truffle-config.js`. Add
 const Web3 = require("web3");
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 
+Web3.providers.HttpProvider.prototype.sendAsync = Web3.providers.HttpProvider.prototype.send
+
 const protocol = "http";
 const ip = "localhost";
 const port = 9650;
